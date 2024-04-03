@@ -1,0 +1,111 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMonoNLNerdFontMono";
+    font-weight: bold;
+    font-size: 16px;
+    min-height: 0;
+}
+@import "/home/karuto/.config/themes/catppuccin-mocha/waybar/waycol.css";
+
+window#waybar {
+    border-radius: 0px;
+    background: @background;
+    color: @text;
+}
+
+tooltip {
+    background: @background;
+    border-radius: 0px;
+}
+
+#workspaces button {
+    padding: 5px;
+    color: @background;
+    margin-right: 5px;
+}
+
+#workspaces button.active {
+    color: @text;
+}
+
+#workspaces button.focused {
+    color: @text;
+    background: @background;
+}
+
+#workspaces button.urgent {
+    color: #11111b;
+    background: @background;
+}
+
+#workspaces button:hover {
+    background: @background;
+    color: @text;
+}
+
+#window,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#bluetooth,
+#temperature,
+#workspaces,
+#tray,
+#backlight,
+#custom-ibus{
+    padding: 0px 10px;
+}
+
+/*close to the right */
+#bluetooth {
+    margin-right: 10px;
+}
+
+#temperature.critical {
+    color: #eba0ac;
+}
+
+#tray {
+    margin-right: 10px;
+}
+
+#workspaces {
+    margin-left: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+#window {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+#clock {
+    margin-left: 5px;
+    color: @text;
+}
+
+#network {
+    color: @text;
+}
+
+#bluetooth {
+    color: @text;
+    margin-right: 10px
+} 
+
+#pulseaudio {
+    color: @text;
+}
+
+#pulseaudio.microphone {
+    color: #cba6f7;
+    margin-right: 10px;
+}
+
+#battery {
+    color: #a6e3a1;
+    margin-right: 10px;
+}
